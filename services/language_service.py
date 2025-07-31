@@ -18,7 +18,7 @@ class LanguageService:
         if hasattr(self, "_initialized") and self._initialized:
             return
 
-        self.storage_file = "user_languages.json"
+        self.storage_file = "data/user_languages.json"
         self.data = self._load_data()
         self.translations = self._load_translations()
         self._initialized = True
